@@ -29,7 +29,7 @@ export default function Home() {
                 <div className="my-8 px-4">
                     <Image src="https://agalves.com/jogos/familiajogando.jpg" alt="Imagem de uma família feliz jogando jogos de tabuleiro" width={896} height={597} className="rounded-2xl shadow-xl mx-auto max-w-2xl w-full" />
                 </div>
-                <Button asChild size="lg" className="cta-gold text-gray-900 font-bold text-xl py-4 px-10 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 inline-block h-auto">
+                <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold text-xl py-4 px-10 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 inline-block h-auto">
                     <a href="#ofertas">
                         Quero Comprar Agora
                     </a>
@@ -124,7 +124,7 @@ export default function Home() {
             </div>
 
             <div className="mt-16">
-              <Button asChild size="lg" className="cta-gold text-gray-900 font-bold py-4 px-10 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 inline-block h-auto text-lg">
+              <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold py-4 px-10 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 inline-block h-auto text-lg">
                   <a href="#ofertas">
                       Quero garantir meu kit agora ↓
                   </a>
@@ -174,7 +174,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="mt-12">
-                <Button asChild className="cta-gold text-gray-900 font-bold py-3 px-8 rounded-full shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 inline-block h-auto">
+                <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold py-3 px-8 rounded-full shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 inline-block h-auto">
                     <a href="#ofertas">
                         Ver planos e preços ↓
                     </a>
@@ -245,7 +245,7 @@ export default function Home() {
           </div>
 
             <div className="mt-12">
-              <Button asChild className="cta-gold text-gray-900 font-bold py-3 px-8 rounded-full shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 inline-block h-auto">
+              <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold py-3 px-8 rounded-full shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 inline-block h-auto">
                 <a href="#ofertas">
                     Quero todos esses jogos ↓
                 </a>
@@ -272,7 +272,7 @@ export default function Home() {
                         <ul className="text-left space-y-3 text-gray-600 mb-8">
                             <li className="flex items-center"><svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>Mais de 30 Jogos Bíblicos</li>
                         </ul>
-                        <div className="cta-gold text-gray-900 w-full font-bold py-3 px-8 rounded-full shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 inline-block h-auto">
+                        <div className="bg-primary text-primary-foreground hover:bg-primary/90 w-full font-bold py-3 px-8 rounded-full shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 inline-block h-auto">
                             Quero só os Jogos Bíblicos
                         </div>
                     </div>
@@ -315,7 +315,7 @@ export default function Home() {
                         <li className="flex items-center"><svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>🎁 150 Salmos Explicados</li>
                         <li className="flex items-center"><svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>🎁 Olimpíadas Bíblicas</li>
                     </ul>
-                    <Button asChild className="cta-gold text-gray-900 w-full font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 inline-block h-auto">
+                    <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90 w-full font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 inline-block h-auto">
                         <a href="#pacote-completo-link">
                             Quero o Pacote Completo
                         </a>
@@ -399,7 +399,7 @@ export default function Home() {
             <p className="text-gray-500 mb-8">
                 Acesso digital imediato. Pagamento único. Sem surpresas.
             </p>
-            <Button asChild size="lg" className="cta-gold text-gray-900 font-bold text-2xl py-5 px-12 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 inline-block h-auto">
+            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold text-2xl py-5 px-12 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 inline-block h-auto">
                 <a href="#ofertas">
                     Quero Ensinar a Fé Brincando!
                 </a>
@@ -409,5 +409,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
