@@ -1,3 +1,64 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-image",
+      "description": "A happy family playing a board game together.",
+      "imageUrl": "https://images.unsplash.com/photo-1743351852930-afaa7a616a62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmYW1pbHklMjBnYW1lfGVufDB8fHx8MTc2MDg5MTc3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "family game"
+    },
+    {
+      "id": "card-game",
+      "description": "Close up of colorful card game pieces.",
+      "imageUrl": "https://images.unsplash.com/photo-1541278107931-e006523892df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXJkJTIwZ2FtZXxlbnwwfHx8fDE3NjA4OTE3NzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "card game"
+    },
+    {
+      "id": "quiz-challenge",
+      "description": "People raising hands to answer a question.",
+      "imageUrl": "https://images.unsplash.com/photo-1599508704512-2f19efd1e35f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxxdWl6fGVufDB8fHx8MTc2MDg5MTc3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "quiz"
+    },
+    {
+      "id": "family-classics",
+      "description": "A classic board game setup.",
+      "imageUrl": "https://images.unsplash.com/photo-1632501641765-e568d28b0015?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxib2FyZCUyMGdhbWV8ZW58MHx8fHwxNzYwODUyMTMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "board game"
+    },
+    {
+      "id": "demo-card-heroes",
+      "description": "Illustration of biblical heroes on cards.",
+      "imageUrl": "https://images.unsplash.com/photo-1744055879912-7fb62797a81f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb2xvcmZ1bCUyMGlsbHVzdHJhdGlvbnxlbnwwfHx8fDE3NjA4MjkyMTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "colorful illustration"
+    },
+    {
+      "id": "demo-family-quiz",
+      "description": "Family laughing while playing a quiz game.",
+      "imageUrl": "https://images.unsplash.com/photo-1597524678053-5e6fef52d8a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmYW1pbHklMjBsYXVnaGluZ3xlbnwwfHx8fDE3NjA4OTE3NzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "family laughing"
+    },
+    {
+      "id": "demo-print-kit",
+      "description": "Printed game sheets and cards on a table.",
+      "imageUrl": "https://images.unsplash.com/photo-1701442876057-0bcbe9317600?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJpbnRlZCUyMHNoZWV0c3xlbnwwfHx8fDE3NjA4OTE3NzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "printed sheets"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Portrait of a smiling woman.",
+      "imageUrl": "https://images.unsplash.com/photo-1598625873873-52f9aefd7d9d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzbWlsaW5nJTIwd29tYW58ZW58MHx8fHwxNzYwODM1ODAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smiling woman"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Portrait of a smiling man.",
+      "imageUrl": "https://images.unsplash.com/photo-1692220438329-e1ac8f1d2513?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzbWlsaW5nJTIwbWFufGVufDB8fHx8MTc2MDgzNTgwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smiling man"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Portrait of a happy family.",
+      "imageUrl": "https://images.unsplash.com/photo-1531983412531-1f49a365ffed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aGFwcHklMjBmYW1pbHl8ZW58MHx8fHwxNzYwODU0NzE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy family"
+    }
+  ]
 }
