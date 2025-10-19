@@ -328,7 +328,7 @@ export default function Home() {
                 {/* Testemunho 3 */}
                 <div className="bg-gray-50 p-6 rounded-lg shadow-md">
                     <div className="flex items-center mb-4">
-                        <Image src="https://agalves.com/img/carla.png" alt="Avatar Carla F." width={50} height={50} className="rounded-full mr-4 object-cover"/>
+                        <Image src="https://i.imgur.com/SROyMcO.jpeg" alt="Avatar Carla F." width={50} height={50} className="rounded-full mr-4 object-cover"/>
                         <div>
                             <p className="font-bold">Carla F.</p>
                             <div className="flex text-yellow-500">
