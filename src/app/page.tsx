@@ -232,7 +232,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="w-full md:w-1/3 max-w-sm p-3">
+            <div className="w-full mdW-1/3 max-w-sm p-3">
               <div className="bg-white rounded-lg shadow-md overflow-hidden border-t-4 border-purple-400 h-full">
                 <Image src="https://agalves.com/jogos/olimpiadas.jpg" alt="Imagem do jogo Quem Sou Eu" width={400} height={192} className="w-full h-48 object-cover"/>
                 <div className="p-4 text-center">
@@ -266,7 +266,7 @@ export default function Home() {
                 <AlertDialog>
                   <AlertDialogTrigger asChild>
                     <div className="bg-white rounded-lg shadow-lg p-8 w-full max-w-sm border-2 border-transparent hover:border-primary transition-all cursor-pointer text-center">
-                        <h3 className="text-2xl font-bold text-blue-600 mb-4">Pacote Simples</h3>
+                        <h3 className="text-2xl font-bold text-gray-800 mb-4">Pacote Simples</h3>
                         <p className="text-5xl font-bold mb-6">R$10<span className="text-lg font-normal">,00</span></p>
                         <ul className="text-left space-y-3 text-gray-600 mb-8">
                             <li className="flex items-center"><svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>Mais de 30 Jogos Bíblicos</li>
@@ -408,5 +408,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
