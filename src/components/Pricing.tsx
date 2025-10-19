@@ -5,74 +5,75 @@ import { Check } from 'lucide-react';
 const tiers = [
   {
     name: 'Pacote Simples',
-    price: 'R$19,90',
-    description: 'Ideal para experimentar a diversão.',
+    price: 'R$17',
+    originalPrice: 'R$17',
+    description: 'Acesso a 10 Jogos e Bônus',
     features: [
-      'Acesso a 10 jogos selecionados',
-      'Quizzes básicos',
+      'Acesso a 10 jogos',
     ],
     isPopular: false,
+    buttonText: 'Garantir Acesso Básico',
+    buttonVariant: 'secondary',
   },
   {
     name: 'Pacote Completo',
-    price: 'R$29,90',
-    description: 'A experiência completa para transformar sua família.',
+    price: 'R$29',
+    originalPrice: 'R$29',
+    description: 'Tudo o que você precisa para +Bônus',
     features: [
-      'Acesso a TODOS os +30 jogos',
-      'Todos os Quizzes e Desafios',
-      'Kit Olimpíadas Bíblicas',
+      'Licença para ministério',
       '200 Cards de Versículos',
       '150 Salmos para Refletir',
-      'Acesso vitalício e atualizações',
+      'Kit Gincana Explosiva',
+      'Acesso Vitálicio',
     ],
     isPopular: true,
+    buttonText: 'Quero o Pacote Completo!',
+    buttonVariant: 'default',
   },
 ];
 
 export function Pricing() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32">
+    <section className="w-full py-12 md:py-24 lg:py-32" style={{ backgroundColor: '#EFF7FF' }}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">Escolha o Plano Perfeito para Sua Família</h2>
-          <p className="mt-4 max-w-3xl mx-auto text-muted-foreground md:text-xl">
-            Acesso imediato a um mundo de aprendizado e diversão. Pagamento único, alegria para sempre.
-          </p>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">Escolha o pacote ideal para sua família</h2>
         </div>
         <div className="grid gap-8 md:grid-cols-2 max-w-4xl mx-auto items-start">
           {tiers.map((tier) => (
-            <Card key={tier.name} className={`flex flex-col ${tier.isPopular ? 'border-primary shadow-2xl scale-105' : 'shadow-lg'}`}>
+            <Card key={tier.name} className={`flex flex-col rounded-2xl ${tier.isPopular ? 'border-primary border-2 shadow-2xl' : 'shadow-lg border'}`}>
               {tier.isPopular && (
-                <div className="bg-primary text-primary-foreground text-sm font-semibold text-center py-1 rounded-t-lg">
+                <div className="bg-primary text-primary-foreground text-sm font-semibold text-center py-1 rounded-t-lg -mt-px">
                   Mais Vendido
                 </div>
               )}
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl font-bold font-headline">{tier.name}</CardTitle>
-                <p className="text-4xl font-extrabold">{tier.price}</p>
+                <div className='flex justify-center items-baseline gap-2'>
+                    <p className="text-4xl font-extrabold">{tier.price}</p>
+                    <p className="text-xl font-bold line-through text-muted-foreground">{tier.originalPrice}</p>
+                </div>
                 <CardDescription>{tier.description}</CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
                 <ul className="space-y-3">
                   {tier.features.map((feature) => (
                     <li key={feature} className="flex items-center gap-2">
-                      <Check className="h-5 w-5 text-primary" />
+                      <Check className="h-5 w-5 text-green-500" />
                       <span className="text-muted-foreground">{feature}</span>
                     </li>
                   ))}
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button className="w-full" variant={tier.isPopular ? 'default' : 'outline'}>
-                  {tier.isPopular ? 'Quero o Pacote Completo' : 'Começar com o Simples'}
+                <Button className="w-full" variant={tier.buttonVariant as any} size="lg">
+                  {tier.buttonText}
                 </Button>
               </CardFooter>
             </Card>
           ))}
         </div>
-        <p className="mt-8 text-center text-sm text-muted-foreground">
-          Garantia incondicional de 7 dias. Compre e acesse todo o material digitalmente para download imediato.
-        </p>
       </div>
     </section>
   );

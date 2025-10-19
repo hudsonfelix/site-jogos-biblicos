@@ -1,57 +1,56 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { CheckCircle2 } from 'lucide-react';
+import { Download, MonitorPlay, Puzzle } from 'lucide-react';
+import { Features } from './Features';
 
 export function Hero() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-image');
 
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32">
+    <section className="w-full pt-12 md:pt-24 lg:pt-32">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-24">
-          <div className="flex flex-col justify-center space-y-4">
+        <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl font-headline">
-                Redescubra a alegria de aprender a Palavra em família com jogos que unem corações e mentes.
+                Transforme o tempo em família em <span className="text-primary">momentos de fé</span> e <span className="text-secondary">diversão!</span>
               </h1>
-              <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                Chega de telas! Conecte sua família aos ensinamentos bíblicos de uma forma interativa e memorável que todos vão amar.
+              <p className="max-w-[800px] mx-auto text-muted-foreground md:text-xl">
+                São mais de 30 jogos e atividades para usar no seu ministério e usar com seu filho para morar no coração dele de um jeito divertido e feliz em família.
               </p>
             </div>
-            <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Button size="lg">Quero meu acesso agora!</Button>
-              <Button size="lg" variant="outline">Ver os jogos</Button>
+        </div>
+      </div>
+      <div className="container mx-auto px-4 md:px-6 mt-12">
+        <Features />
+        <div className="relative my-12 h-64 min-h-[300px] lg:h-auto lg:min-h-[400px]">
+          {heroImage && (
+            <Image
+              src={heroImage.imageUrl}
+              alt={heroImage.description}
+              fill
+              className="object-contain"
+              data-ai-hint={heroImage.imageHint}
+            />
+          )}
+        </div>
+        <div className="flex flex-col items-center gap-4">
+            <Button size="lg" className="w-full max-w-md">Quero Comprar Agora</Button>
+            <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-8 text-sm text-muted-foreground mt-4">
+                <div className="flex items-center gap-2">
+                    <Download className="h-4 w-4"/>
+                    <span>Baixe e imprima</span>
+                </div>
+                 <div className="flex items-center gap-2">
+                    <MonitorPlay className="h-4 w-4"/>
+                    <span>Assista onde quiser</span>
+                </div>
+                 <div className="flex items-center gap-2">
+                    <Puzzle className="h-4 w-4"/>
+                    <span>+30 novos jogos</span>
+                </div>
             </div>
-            <p className="text-xs text-muted-foreground">
-              Pagamento seguro • Acesso imediato • Garantia de 7 dias
-            </p>
-            <ul className="grid gap-2 text-sm">
-                <li className="flex items-center gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary"/>
-                    Download imediato, comece a jogar em minutos.
-                </li>
-                <li className="flex items-center gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary"/>
-                    Imprima quantas vezes quiser, diversão que não acaba.
-                </li>
-                <li className="flex items-center gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary"/>
-                    Conteúdo 100% fiel aos textos bíblicos.
-                </li>
-            </ul>
-          </div>
-          <div className="relative h-64 min-h-[300px] lg:h-auto">
-            {heroImage && (
-              <Image
-                src={heroImage.imageUrl}
-                alt={heroImage.description}
-                fill
-                className="object-cover rounded-xl shadow-2xl"
-                data-ai-hint={heroImage.imageHint}
-              />
-            )}
-          </div>
+            <p className="text-xs text-muted-foreground mt-2">PAGUE APENAS UMA VEZ E TENHA ACESSO VITALÍCIO!</p>
         </div>
       </div>
     </section>

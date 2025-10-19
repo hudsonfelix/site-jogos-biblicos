@@ -11,7 +11,13 @@ export function Header() {
             Bíblia Divertida
           </span>
         </a>
-        <Button>Quero meu Acesso</Button>
+        <nav className="hidden md:flex gap-6">
+            <a href="#" className="text-muted-foreground hover:text-foreground">Início</a>
+            <a href="#" className="text-muted-foreground hover:text-foreground">O que vou receber</a>
+            <a href="#" className="text-muted-foreground hover:text-foreground">Depoimentos</a>
+            <a href="#" className="text-muted-foreground hover:text-foreground">Garantia</a>
+        </nav>
+        <Button>Quero Comprar Agora</Button>
       </div>
     </header>
   );

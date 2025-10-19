@@ -19,6 +19,10 @@ const faqs = [
     question: 'Posso usar na minha igreja ou escola?',
     answer: 'Sim! A licença do Pacote Completo permite o uso em pequenos grupos, células, classes de escola dominical e eventos não-comerciais. Para uso em larga escala, por favor, entre em contato conosco.',
   },
+   {
+    question: 'Os jogos são coloridos?',
+    answer: 'Sim, todos os jogos são bem coloridos para chamar a atenção das crianças, mas você também tem a opção de imprimir em preto e branco para economizar tinta.',
+  },
 ];
 
 export function GuaranteeFaq() {

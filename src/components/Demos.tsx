@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { Button } from './ui/button';
 
 const demos = [
   {
@@ -22,19 +23,16 @@ const demos = [
 
 export function Demos() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-card">
+    <section className="w-full py-12 md:py-24 lg:py-32" style={{ backgroundColor: '#EFF7FF' }}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">Veja a Diversão em Ação</h2>
-          <p className="mt-4 max-w-3xl mx-auto text-muted-foreground md:text-xl">
-            Dê uma espiada em como o Clube dos Jogos Bíblicos vai transformar os momentos em família.
-          </p>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">Por que o Clube dos Jogos Bíblicos é diferente?</h2>
         </div>
         <div className="grid gap-8 md:grid-cols-3">
           {demos.map((demo) => {
             const image = PlaceHolderImages.find(img => img.id === demo.id);
             return (
-              <Card key={demo.id} className="overflow-hidden shadow-lg">
+              <Card key={demo.id} className="overflow-hidden shadow-lg border-none rounded-xl">
                 {image && (
                   <div className="relative aspect-video">
                     <Image
@@ -47,14 +45,17 @@ export function Demos() {
                   </div>
                 )}
                 <CardHeader>
-                  <CardTitle className="font-headline text-xl">{demo.title}</CardTitle>
+                  <CardTitle className="font-headline text-xl text-center">{demo.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription>{demo.description}</CardDescription>
+                  <CardDescription className="text-center">{demo.description}</CardDescription>
                 </CardContent>
               </Card>
             );
           })}
+        </div>
+        <div className="text-center mt-12">
+            <Button variant="secondary" size="lg">Quero garantir o meu agora!</Button>
         </div>
       </div>
     </section>

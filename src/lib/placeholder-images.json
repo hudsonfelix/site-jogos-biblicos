@@ -2,45 +2,45 @@
   "placeholderImages": [
     {
       "id": "hero-image",
-      "description": "A happy family playing a board game together.",
-      "imageUrl": "https://images.unsplash.com/photo-1743351852930-afaa7a616a62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmYW1pbHklMjBnYW1lfGVufDB8fHx8MTc2MDg5MTc3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "family game"
+      "description": "Composite image of biblical games and activities.",
+      "imageUrl": "https://agalves.com/jogos/img/img_28_1.png",
+      "imageHint": "biblical games"
     },
     {
       "id": "card-game",
       "description": "Close up of colorful card game pieces.",
-      "imageUrl": "https://images.unsplash.com/photo-1541278107931-e006523892df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXJkJTIwZ2FtZXxlbnwwfHx8fDE3NjA4OTE3NzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://agalves.com/jogos/img/img_28_4.png",
       "imageHint": "card game"
     },
     {
       "id": "quiz-challenge",
       "description": "People raising hands to answer a question.",
-      "imageUrl": "https://images.unsplash.com/photo-1599508704512-2f19efd1e35f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxxdWl6fGVufDB8fHx8MTc2MDg5MTc3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://agalves.com/jogos/img/img_28_5.png",
       "imageHint": "quiz"
     },
     {
       "id": "family-classics",
       "description": "A classic board game setup.",
-      "imageUrl": "https://images.unsplash.com/photo-1632501641765-e568d28b0015?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxib2FyZCUyMGdhbWV8ZW58MHx8fHwxNzYwODUyMTMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://agalves.com/jogos/img/img_28_6.png",
       "imageHint": "board game"
     },
     {
       "id": "demo-card-heroes",
-      "description": "Illustration of biblical heroes on cards.",
-      "imageUrl": "https://images.unsplash.com/photo-1744055879912-7fb62797a81f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb2xvcmZ1bCUyMGlsbHVzdHJhdGlvbnxlbnwwfHx8fDE3NjA4MjkyMTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "colorful illustration"
+      "description": "Illustration of a boy reading the bible with angel wings",
+      "imageUrl": "https://agalves.com/jogos/img/img_28_7.png",
+      "imageHint": "child reading bible"
     },
     {
       "id": "demo-family-quiz",
-      "description": "Family laughing while playing a quiz game.",
-      "imageUrl": "https://images.unsplash.com/photo-1597524678053-5e6fef52d8a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmYW1pbHklMjBsYXVnaGluZ3xlbnwwfHx8fDE3NjA4OTE3NzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "family laughing"
+      "description": "Illustration of a girl reading the bible with angel wings",
+      "imageUrl": "https://agalves.com/jogos/img/img_28_8.png",
+      "imageHint": "child reading bible"
     },
     {
       "id": "demo-print-kit",
-      "description": "Printed game sheets and cards on a table.",
-      "imageUrl": "https://images.unsplash.com/photo-1701442876057-0bcbe9317600?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJpbnRlZCUyMHNoZWV0c3xlbnwwfHx8fDE3NjA4OTE3NzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "printed sheets"
+      "description": "Illustration of children running and playing",
+      "imageUrl": "https://agalves.com/jogos/img/img_28_9.png",
+      "imageHint": "children playing"
     },
     {
       "id": "testimonial-1",

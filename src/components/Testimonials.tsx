@@ -2,72 +2,70 @@ import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Star } from 'lucide-react';
+import { Button } from './ui/button';
 
 const testimonials = [
   {
     imageId: 'testimonial-1',
     name: 'Ana P.',
-    location: 'São Paulo/SP',
-    quote: "Meus filhos agora pedem para 'brincar de Bíblia'. Nunca imaginei que seria tão fácil e divertido ensiná-los. Recomendo demais!",
+    rating: 5,
+    quote: "Meus filhos amaram! O mais novo de 4 anos já está aprendendo as histórias e o mais velho de 9 anos está super empolgado com as gincanas. Super recomendo!",
   },
   {
     imageId: 'testimonial-2',
     name: 'Marcos V.',
-    location: 'Rio de Janeiro/RJ',
-    quote: 'Usamos nas atividades da nossa célula e foi um sucesso! Dinâmico, bem feito e muito edificante. O pessoal amou.',
+    rating: 5,
+    quote: 'Material excelente! Bem elaborado, fácil de usar e o mais importante, conseguiu prender a atenção das crianças. É uma ferramenta incrível para o ministério infantil.',
   },
   {
     imageId: 'testimonial-3',
     name: 'Família Santos',
-    location: 'Belo Horizonte/MG',
-    quote: 'Material de altíssima qualidade. O design é lindo e as regras são simples. Uniu nossa família em volta da Palavra.',
+    rating: 5,
+    quote: 'Comprei sem muita expectativa, mas me surpreendi. Os jogos são muito divertidos e educativos. As crianças estão aprendendo a Bíblia de uma forma que nunca imaginei.',
   },
 ];
 
 export function Testimonials() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-card">
+    <section className="w-full py-12 md:py-24 lg:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">O que as Famílias Estão Dizendo</h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">Famílias que já estão se divertindo com a Palavra de Deus!</h2>
           <p className="mt-4 max-w-3xl mx-auto text-muted-foreground md:text-xl">
-            A confiança e a alegria de quem já faz parte do nosso clube.
+            Veja o que quem já comprou está dizendo:
           </p>
         </div>
         <div className="grid gap-8 md:grid-cols-3">
           {testimonials.map((testimonial) => {
             const image = PlaceHolderImages.find(img => img.id === testimonial.imageId);
             return (
-              <Card key={testimonial.name} className="p-6 shadow-lg">
+              <Card key={testimonial.name} className="p-6 shadow-lg rounded-xl">
                 <CardContent className="p-0">
                   <div className="flex items-center mb-4">
                     {image && (
-                      <Image
-                        src={image.imageUrl}
-                        alt={testimonial.name}
-                        width={56}
-                        height={56}
-                        className="rounded-full mr-4 object-cover"
-                        data-ai-hint={image.imageHint}
-                      />
+                      <div className="w-14 h-14 rounded-full bg-blue-200 flex items-center justify-center text-xl font-bold text-blue-700 mr-4">
+                        {testimonial.name.charAt(0)}
+                      </div>
                     )}
                     <div>
                       <p className="font-bold">{testimonial.name}</p>
-                      <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                      <div className="flex">
+                        {[...Array(testimonial.rating)].map((_, i) => (
+                          <Star key={i} className="h-5 w-5 text-primary fill-primary" />
+                        ))}
+                      </div>
                     </div>
                   </div>
-                  <div className="flex mb-4">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 text-accent fill-accent" />
-                    ))}
-                  </div>
-                  <blockquote className="text-muted-foreground italic border-l-2 border-primary pl-4">
+                  <blockquote className="text-muted-foreground italic">
                     "{testimonial.quote}"
                   </blockquote>
                 </CardContent>
               </Card>
             );
           })}
+        </div>
+        <div className="text-center mt-12">
+            <Button variant="outline" size="lg" className="border-green-500 text-green-500 hover:bg-green-500 hover:text-white">Conferir depoimentos</Button>
         </div>
       </div>
     </section>
