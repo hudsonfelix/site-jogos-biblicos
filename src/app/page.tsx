@@ -9,10 +9,10 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6">
             <div className="max-w-3xl mx-auto">
                 <h1 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight mb-4">
-                    Transforme o tempo em família em <span className="text-primary">momentos de fé</span> e <span className="text-secondary">diversão!</span>
+                    "Seus filhos vão implorar para jogar 'só mais uma vez' antes de dormir — e sem saber, estarão memorizando a Palavra que vai guiá-los pelo resto da vida."
                 </h1>
                 <p className="text-lg md:text-xl text-gray-600 mb-8">
-                    Ensine a Palavra de Deus de forma leve, alegre e inesquecível com o <strong>Clube dos Jogos Bíblicos</strong> — um kit digital com mais de <strong>30 jogos</strong> cristãos prontos para imprimir.
+                    "O Clube dos Jogos Bíblicos transforma a hora do devocional na parte favorita do dia — sem briga, sem tédio, só memórias que eles vão carregar pra sempre. Kit digital com mais de 30 jogos cristãos prontos para imprimir e brincar"
                 </p>
                 <div className="my-8 px-4">
                     <Image src="https://agalves.com/jogos/familiajogando.jpg" alt="Imagem de uma família feliz jogando jogos de tabuleiro" width={896} height={597} className="rounded-2xl shadow-xl mx-auto max-w-2xl w-full" />
