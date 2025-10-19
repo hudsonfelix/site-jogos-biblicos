@@ -302,7 +302,7 @@ export default function Home() {
                 {/* Testemunho 1 */}
                 <div className="bg-gray-50 p-6 rounded-lg shadow-md">
                     <div className="flex items-center mb-4">
-                        <Image src="https://placehold.co/50x50/EBF8FF/3182CE?text=A" alt="Avatar Ana S." width={50} height={50} className="rounded-full mr-4"/>
+                        <Image src="https://i.imgur.com/ScNU86I.jpeg" alt="Avatar Ana S." width={50} height={50} className="rounded-full mr-4"/>
                         <div>
                             <p className="font-bold">Ana S.</p>
                             <div className="flex text-yellow-500">
@@ -372,5 +372,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
