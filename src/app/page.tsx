@@ -1,5 +1,16 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
 
 export default function Home() {
   return (
@@ -251,25 +262,54 @@ export default function Home() {
                 Escolha o pacote ideal para sua família
             </h2>
             <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-8">
-                {/* Pacote Simples */}
-                <div className="bg-white rounded-lg shadow-lg p-8 w-full max-w-sm border-2 border-transparent hover:border-blue-400 transition-all">
-                    <h3 className="text-2xl font-bold text-blue-600 mb-4">Pacote Simples</h3>
-                    <p className="text-5xl font-bold mb-6">R$10<span className="text-lg font-normal">,00</span></p>
-                    <ul className="text-left space-y-3 text-gray-600 mb-8">
-                        <li className="flex items-center"><svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>Mais de 30 Jogos Bíblicos</li>
-                    </ul>
-                    <Button asChild className="cta-blue text-white w-full font-bold py-3 px-8 rounded-full shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 inline-block h-auto">
-                        <a href="#">
-                            Quero só os Jogos Bíblicos
+                
+                <AlertDialog>
+                  <AlertDialogTrigger asChild>
+                    {/* Pacote Simples */}
+                    <div className="bg-white rounded-lg shadow-lg p-8 w-full max-w-sm border-2 border-transparent hover:border-blue-400 transition-all cursor-pointer">
+                        <h3 className="text-2xl font-bold text-blue-600 mb-4">Pacote Simples</h3>
+                        <p className="text-5xl font-bold mb-6">R$10<span className="text-lg font-normal">,00</span></p>
+                        <ul className="text-left space-y-3 text-gray-600 mb-8">
+                            <li className="flex items-center"><svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>Mais de 30 Jogos Bíblicos</li>
+                        </ul>
+                        <Button asChild className="cta-blue text-white w-full font-bold py-3 px-8 rounded-full shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 inline-block h-auto">
+                            <a>
+                                Quero só os Jogos Bíblicos
+                            </a>
+                        </Button>
+                    </div>
+                  </AlertDialogTrigger>
+                  <AlertDialogContent className="text-center p-8">
+                    <AlertDialogHeader>
+                      <AlertDialogTitle className="text-2xl font-bold text-green-600">ESPERE! OFERTA ESPECIAL!</AlertDialogTitle>
+                      <AlertDialogDescription className="text-gray-600 text-lg">
+                        Atualize para o Pacote Completo e receba todos os bônus por um preço que você não vai acreditar.
+                      </AlertDialogDescription>
+                    </AlertDialogHeader>
+                    <div className="my-6">
+                      <p className="text-5xl font-bold">Apenas R$18,90</p>
+                      <p className="text-gray-500 line-through">De R$27,00</p>
+                    </div>
+                    <AlertDialogFooter className="flex-col sm:flex-col sm:space-x-0 gap-2 w-full">
+                      <AlertDialogAction asChild className="w-full bg-green-500 hover:bg-green-600 text-white text-lg font-bold py-3 px-6 rounded-full h-auto">
+                        <a href="#pacote-completo-link">SIM! EU QUERO A OFERTA! →</a>
+                      </AlertDialogAction>
+                      <AlertDialogCancel asChild className="w-full">
+                        <a href="#pacote-simples-link" className="text-gray-500 hover:underline">
+                        Não, obrigado. Quero apenas o Pacote Básico.
                         </a>
-                    </Button>
-                </div>
+                      </AlertDialogCancel>
+                    </AlertDialogFooter>
+                  </AlertDialogContent>
+                </AlertDialog>
+
 
                 {/* Pacote Completo */}
-                <div className="bg-white rounded-lg shadow-2xl p-8 w-full max-w-sm border-4 border-primary relative transform lg:scale-110">
+                <div id="pacote-completo-link" className="bg-white rounded-lg shadow-2xl p-8 w-full max-w-sm border-4 border-primary relative transform lg:scale-110">
                     <span className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-red-500 text-white text-sm font-bold px-4 py-1 rounded-full">🔥 Mais Vendido</span>
                     <h3 className="text-2xl font-bold text-yellow-600 mb-4">Pacote Completo</h3>
-                    <p className="text-5xl font-bold mb-6">R$27<span className="text-lg font-normal">,00</span></p>
+                    <p className="text-5xl font-bold mb-2">R$18<span className="text-lg font-normal">,90</span></p>
+                    <p className="text-gray-500 line-through mb-4">De R$27,00</p>
                     <p className="font-semibold mb-4">Tudo do pacote simples + bônus:</p>
                     <ul className="text-left space-y-3 text-gray-600 mb-8">
                         <li className="flex items-center"><svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>🎁 500 Pregações Poderosas</li>
