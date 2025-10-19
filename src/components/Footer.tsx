@@ -11,7 +11,7 @@ export function Footer() {
         <p className="max-w-3xl mx-auto text-muted-foreground mb-8">
           Você pode pagar no pix, cartão ou boleto.
         </p>
-        <Button size="lg">Quero Ensinar e Já Brincar!</Button>
+        <Button size="lg" className="w-full max-w-md">Quero Ensinar e Já Brincar!</Button>
         <div className="flex justify-center gap-6 mt-8">
             <Mail className="h-6 w-6 text-muted-foreground"/>
             <Twitter className="h-6 w-6 text-muted-foreground"/>

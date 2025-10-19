@@ -43,7 +43,7 @@ export function WhyDifferent() {
                         </li>
                     ))}
                 </ul>
-                <Button size="lg" className="mt-8">Quero todo o material!</Button>
+                <Button size="lg" className="mt-8 w-full sm:w-auto">Quero todo o material!</Button>
             </div>
         </div>
       </div>

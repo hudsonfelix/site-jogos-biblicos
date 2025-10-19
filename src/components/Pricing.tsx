@@ -5,8 +5,8 @@ import { Check } from 'lucide-react';
 const tiers = [
   {
     name: 'Pacote Simples',
-    price: 'R$17',
-    originalPrice: 'R$17',
+    price: 'R$10',
+    originalPrice: 'R$19',
     description: 'Acesso a 10 Jogos e Bônus',
     features: [
       'Acesso a 10 jogos',

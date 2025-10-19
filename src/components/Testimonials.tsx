@@ -1,8 +1,8 @@
-import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Star } from 'lucide-react';
 import { Button } from './ui/button';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+
 
 const testimonials = [
   {
@@ -37,16 +37,13 @@ export function Testimonials() {
         </div>
         <div className="grid gap-8 md:grid-cols-3">
           {testimonials.map((testimonial) => {
-            const image = PlaceHolderImages.find(img => img.id === testimonial.imageId);
             return (
               <Card key={testimonial.name} className="p-6 shadow-lg rounded-xl">
                 <CardContent className="p-0">
                   <div className="flex items-center mb-4">
-                    {image && (
-                      <div className="w-14 h-14 rounded-full bg-blue-200 flex items-center justify-center text-xl font-bold text-blue-700 mr-4">
-                        {testimonial.name.charAt(0)}
-                      </div>
-                    )}
+                    <Avatar className="w-14 h-14 mr-4">
+                      <AvatarFallback className="bg-blue-200 text-xl font-bold text-blue-700">{testimonial.name.charAt(0)}</AvatarFallback>
+                    </Avatar>
                     <div>
                       <p className="font-bold">{testimonial.name}</p>
                       <div className="flex">
