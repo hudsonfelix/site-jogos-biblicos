@@ -9,7 +9,7 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6">
             <div className="max-w-3xl mx-auto">
                 <h1 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight mb-4">
-                    "Seus filhos vão implorar para jogar 'só mais uma vez' antes de dormir — e sem saber, estarão memorizando a Palavra que vai guiá-los pelo resto da vida."
+                "Pais cristãos descobriram como <span className="text-primary">memorizar versículos 3x mais rápido</span> sem forçar — o segredo? <span className="text-secondary">30 jogos desenhados por educadores</span> de escola dominical com 15 anos em sala."
                 </h1>
                 <p className="text-lg md:text-xl text-gray-600 mb-8">
                     "O Clube dos Jogos Bíblicos transforma a hora do devocional na parte favorita do dia — sem briga, sem tédio, só memórias que eles vão carregar pra sempre. Kit digital com mais de 30 jogos cristãos prontos para imprimir e brincar"
@@ -302,7 +302,7 @@ export default function Home() {
                 {/* Testemunho 1 */}
                 <div className="bg-gray-50 p-6 rounded-lg shadow-md">
                     <div className="flex items-center mb-4">
-                        <Image src="https://i.imgur.com/ScNU86I.jpeg" alt="Avatar Ana S." width={50} height={50} className="rounded-full mr-4"/>
+                        <Image src="https://i.imgur.com/ScNU86I.jpeg" alt="Avatar Ana S." width={50} height={50} className="rounded-full mr-4 object-cover"/>
                         <div>
                             <p className="font-bold">Ana S.</p>
                             <div className="flex text-yellow-500">
@@ -315,7 +315,7 @@ export default function Home() {
                 {/* Testemunho 2 */}
                 <div className="bg-gray-50 p-6 rounded-lg shadow-md">
                     <div className="flex items-center mb-4">
-                        <Image src="https://i.imgur.com/xZQ5nFf.jpeg" alt="Avatar Marcos P." width={50} height={50} className="rounded-full mr-4"/>
+                        <Image src="https://i.imgur.com/xZQ5nFf.jpeg" alt="Avatar Marcos P." width={50} height={50} className="rounded-full mr-4 object-cover"/>
                         <div>
                             <p className="font-bold">Marcos P.</p>
                             <div className="flex text-yellow-500">
