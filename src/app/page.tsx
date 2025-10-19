@@ -123,7 +123,7 @@ export default function Home() {
             </div>
 
             <div className="mt-16">
-              <Button asChild size="lg" className="cta-blue text-white font-bold py-4 px-10 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 inline-block h-auto text-lg">
+              <Button asChild size="lg" className="cta-gold text-gray-900 font-bold py-4 px-10 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 inline-block h-auto text-lg">
                   <a href="#ofertas">
                       Quero garantir meu kit agora ↓
                   </a>
@@ -244,7 +244,7 @@ export default function Home() {
           </div>
 
             <div className="mt-12">
-              <Button asChild className="cta-blue text-white font-bold py-3 px-8 rounded-full shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 inline-block h-auto">
+              <Button asChild className="cta-gold text-gray-900 font-bold py-3 px-8 rounded-full shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 inline-block h-auto">
                 <a href="#ofertas">
                     Quero todos esses jogos ↓
                 </a>
@@ -265,13 +265,13 @@ export default function Home() {
                 
                 <AlertDialog>
                   <AlertDialogTrigger asChild>
-                    <div className="bg-white rounded-lg shadow-lg p-8 w-full max-w-sm border-2 border-transparent hover:border-blue-400 transition-all cursor-pointer text-center">
+                    <div className="bg-white rounded-lg shadow-lg p-8 w-full max-w-sm border-2 border-transparent hover:border-primary transition-all cursor-pointer text-center">
                         <h3 className="text-2xl font-bold text-blue-600 mb-4">Pacote Simples</h3>
                         <p className="text-5xl font-bold mb-6">R$10<span className="text-lg font-normal">,00</span></p>
                         <ul className="text-left space-y-3 text-gray-600 mb-8">
                             <li className="flex items-center"><svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>Mais de 30 Jogos Bíblicos</li>
                         </ul>
-                        <div className="cta-blue bg-blue-500 text-white w-full font-bold py-3 px-8 rounded-full shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 inline-block h-auto">
+                        <div className="cta-gold text-gray-900 w-full font-bold py-3 px-8 rounded-full shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 inline-block h-auto">
                             Quero só os Jogos Bíblicos
                         </div>
                     </div>
