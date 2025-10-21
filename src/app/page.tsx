@@ -286,7 +286,7 @@ export default function Home() {
                     </AlertDialogHeader>
                     <div className="my-6">
                       <p className="text-5xl font-bold">Apenas R$14,99</p>
-                      <p className="text-gray-500 line-through">De R$27,00</p>
+                      <p className="text-gray-500 line-through">De R$19,99</p>
                     </div>
                     <AlertDialogFooter className="flex-col sm:flex-col sm:space-x-0 gap-2 w-full">
                       <AlertDialogAction asChild className="w-full bg-green-500 hover:bg-green-600 text-white text-lg font-bold py-3 px-6 rounded-full h-auto">
