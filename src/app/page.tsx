@@ -268,7 +268,7 @@ export default function Home() {
                   <AlertDialogTrigger asChild>
                     <div className="bg-white rounded-lg shadow-lg p-8 w-full max-w-sm border-2 border-transparent hover:border-primary transition-all cursor-pointer text-center">
                         <h3 className="text-2xl font-bold text-gray-800 mb-4">Pacote Simples</h3>
-                        <p className="text-5xl font-bold mb-6">R$10<span className="text-lg font-normal">,00</span></p>
+                        <p className="text-5xl font-bold mb-6">R$7<span className="text-lg font-normal">,99</span></p>
                         <ul className="text-left space-y-3 text-gray-600 mb-8">
                             <li className="flex items-center"><svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>Mais de 30 Jogos Bíblicos</li>
                         </ul>
@@ -285,7 +285,7 @@ export default function Home() {
                       </AlertDialogDescription>
                     </AlertDialogHeader>
                     <div className="my-6">
-                      <p className="text-5xl font-bold">Apenas R$18,90</p>
+                      <p className="text-5xl font-bold">Apenas R$19,99</p>
                       <p className="text-gray-500 line-through">De R$27,00</p>
                     </div>
                     <AlertDialogFooter className="flex-col sm:flex-col sm:space-x-0 gap-2 w-full">
@@ -306,7 +306,7 @@ export default function Home() {
                 <div id="pacote-completo-link" className="bg-white rounded-lg shadow-2xl p-8 w-full max-w-sm border-4 border-primary relative transform lg:scale-110">
                     <span className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-red-500 text-white text-sm font-bold px-4 py-1 rounded-full">🔥 Mais Vendido</span>
                     <h3 className="text-2xl font-bold text-yellow-600 mb-4">Pacote Completo</h3>
-                    <p className="text-5xl font-bold mb-6">R$27<span className="text-lg font-normal">,00</span></p>
+                    <p className="text-5xl font-bold mb-6">R$19<span className="text-lg font-normal">,99</span></p>
                     <p className="font-semibold mb-4">Tudo do pacote simples + bônus:</p>
                     <ul className="text-left space-y-3 text-gray-600 mb-8">
                         <li className="flex items-center"><svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>🎁 500 Pregações Poderosas</li>
@@ -409,5 +409,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
