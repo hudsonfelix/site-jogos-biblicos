@@ -290,10 +290,10 @@ export default function Home() {
                     </div>
                     <AlertDialogFooter className="flex-col sm:flex-col sm:space-x-0 gap-2 w-full">
                       <AlertDialogAction asChild className="w-full bg-green-500 hover:bg-green-600 text-white text-lg font-bold py-3 px-6 rounded-full h-auto">
-                        <a href="#pacote-completo-link">SIM! EU QUERO A OFERTA! →</a>
+                        <a href="https://pay.cakto.com.br/3dayeab_616770">SIM! EU QUERO A OFERTA! →</a>
                       </AlertDialogAction>
                       <AlertDialogCancel asChild className="w-full mt-2">
-                        <a href="#pacote-simples-link" className="text-gray-500 hover:underline">
+                        <a href="https://pay.cakto.com.br/34paegk_616757" className="text-gray-500 hover:underline">
                         Não, obrigado. Quero apenas o Pacote Básico.
                         </a>
                       </AlertDialogCancel>
@@ -316,7 +316,7 @@ export default function Home() {
                         <li className="flex items-center"><svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>🎁 Olimpíadas Bíblicas</li>
                     </ul>
                     <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90 w-full font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 inline-block h-auto">
-                        <a href="#pacote-completo-link">
+                        <a href="https://pay.cakto.com.br/38kq3i9_616713">
                             Quero o Pacote Completo
                         </a>
                     </Button>
@@ -409,3 +409,4 @@ export default function Home() {
     </div>
   );
 }
+
