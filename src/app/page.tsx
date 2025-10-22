@@ -12,6 +12,8 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
+import { Badge } from '@/components/ui/badge';
+import { CheckCircle2 } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -21,10 +23,10 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6">
             <div className="max-w-3xl mx-auto">
                 <h1 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight mb-4">
-                "Pais cristãos descobriram como <span className="text-primary">memorizar versículos 3x mais rápido</span> sem forçar — o segredo? <span className="text-secondary">30 jogos desenhados por educadores</span> de escola dominical com 15 anos em sala."
+                  Memorize Versículos 3x Mais Rápido <span className="text-primary">Sem Forçar Seus Filhos</span>
                 </h1>
                 <p className="text-lg md:text-xl text-gray-600 mb-8">
-                    "O Clube dos Jogos Bíblicos transforma a hora do devocional na parte favorita do dia — sem briga, sem tédio, só memórias que eles vão carregar pra sempre. Kit digital com mais de 30 jogos cristãos prontos para imprimir e brincar"
+                  O segredo? Mais de 30 jogos bíblicos criados por educadores com 15 anos de experiência, que transformam o devocional no momento favorito do dia. Chega de tédio e reclamação!
                 </p>
                 <div className="my-8 px-4">
                     <Image src="https://agalves.com/jogos/familiajogando.jpg" alt="Imagem de uma família feliz jogando jogos de tabuleiro" width={896} height={597} className="rounded-2xl shadow-xl mx-auto max-w-2xl w-full" />
@@ -133,8 +135,36 @@ export default function Home() {
         </div>
     </section>
 
-    {/* SEÇÃO 3 – BENEFÍCIOS */}
+    {/* SEÇÃO 3 – PARA QUEM É */}
     <section className="bg-light-blue py-16 sm:py-24">
+        <div className="container mx-auto px-4 sm:px-6">
+            <div className="max-w-3xl mx-auto text-center">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                    Este kit foi feito para você?
+                </h2>
+                <p className="text-lg text-gray-600 mb-12">
+                    Se você se identifica com algum destes pontos, a resposta é sim!
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left">
+                    <div className="bg-white p-6 rounded-lg shadow">
+                        <p className="flex items-start"><CheckCircle2 className="w-6 h-6 mr-3 text-green-500 flex-shrink-0 mt-1" /> Para <span className='font-bold ml-1'>pais cristãos</span> que querem ensinar a Bíblia de um jeito divertido.</p>
+                    </div>
+                    <div className="bg-white p-6 rounded-lg shadow">
+                        <p className="flex items-start"><CheckCircle2 className="w-6 h-6 mr-3 text-green-500 flex-shrink-0 mt-1" /> Para quem <span className='font-bold ml-1'>não quer mais lutar</span> contra o tédio e a reclamação na hora do devocional.</p>
+                    </div>
+                    <div className="bg-white p-6 rounded-lg shadow">
+                        <p className="flex items-start"><CheckCircle2 className="w-6 h-6 mr-3 text-green-500 flex-shrink-0 mt-1" /> Para <span className='font-bold ml-1'>líderes de ministério infantil</span> e professores de escola dominical.</p>
+                    </div>
+                    <div className="bg-white p-6 rounded-lg shadow">
+                        <p className="flex items-start"><CheckCircle2 className="w-6 h-6 mr-3 text-green-500 flex-shrink-0 mt-1" /> Para quem busca criar <span className='font-bold ml-1'>memórias afetivas</span> e fortalecer os laços familiares na fé.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {/* SEÇÃO 4 – BENEFÍCIOS */}
+    <section className="py-16 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-12">
                 Por que o Clube dos Jogos Bíblicos é diferente?
@@ -183,8 +213,8 @@ export default function Home() {
         </div>
     </section>
 
-    {/* SEÇÃO 4 – JOGOS */}
-    <section className="py-16 sm:py-24">
+    {/* SEÇÃO 5 – JOGOS */}
+    <section id="jogos" className="bg-light-blue py-16 sm:py-24">
       <div className="container mx-auto px-4 sm:px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-12">
           Veja alguns Bônus que sua família vai amar!
@@ -256,8 +286,8 @@ export default function Home() {
       </div>
     </section>
 
-    {/* SEÇÃO 5 – PLANOS E OFERTAS */}
-    <section id="ofertas" className="bg-light-blue py-16 sm:py-24">
+    {/* SEÇÃO 6 – PLANOS E OFERTAS */}
+    <section id="ofertas" className="bg-white py-16 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-12">
                 Escolha o pacote ideal para sua família
@@ -266,7 +296,7 @@ export default function Home() {
                 
                 <AlertDialog>
                   <AlertDialogTrigger asChild>
-                    <div className="bg-white rounded-lg shadow-lg p-8 w-full max-w-sm border-2 border-transparent hover:border-primary transition-all cursor-pointer text-center">
+                    <div className="bg-white rounded-lg shadow-lg p-8 w-full max-w-sm border-2 border-gray-200 hover:border-primary transition-all cursor-pointer text-center">
                         <h3 className="text-2xl font-bold text-gray-800 mb-4">Pacote Simples</h3>
                         <p className="text-5xl font-bold mb-6">R$7<span className="text-lg font-normal">,99</span></p>
                         <ul className="text-left space-y-3 text-gray-600 mb-8">
@@ -326,8 +356,8 @@ export default function Home() {
         </div>
     </section>
 
-    {/* SEÇÃO 6 – PROVA SOCIAL */}
-    <section className="py-16 sm:py-24">
+    {/* SEÇÃO 7 – PROVA SOCIAL */}
+    <section className="bg-light-blue py-16 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Famílias que já estão se divertindo com a Palavra de Deus!
@@ -337,7 +367,7 @@ export default function Home() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {/* Testemunho 1 */}
-                <div className="bg-gray-50 p-6 rounded-lg shadow-md">
+                <div className="bg-white p-6 rounded-lg shadow-md">
                     <div className="flex items-center mb-4">
                         <Image src="https://i.imgur.com/ScNU86I.jpeg" alt="Avatar Ana S." width={50} height={50} className="rounded-full mr-4 object-cover"/>
                         <div>
@@ -387,16 +417,19 @@ export default function Home() {
     </section>
 
 
-    {/* SEÇÃO 7 – GARANTIA + CTA FINAL */}
+    {/* SEÇÃO 8 – GARANTIA + CTA FINAL */}
     <footer className="bg-white py-16 sm:py-24">
-        <div className="container mx-auto px-4 sm:px-6 text-center max-w-3xl">
-             <div className="flex justify-center items-center mb-6">
-                <span className="text-5xl text-yellow-500">🕊️</span>
+        <div className="container mx-auto px-4 sm:px-6 text-center max-w-4xl">
+             <div className="bg-gray-50 border-2 border-dashed border-gray-300 rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-center gap-8">
+                <Image src="https://agalves.com/jogos/garantia.png" alt="Selo de Garantia de 7 Dias" width={150} height={150} className="w-24 h-24 md:w-32 md:h-32"/>
+                <div className="text-center md:text-left">
+                  <h3 className="text-2xl font-bold text-gray-800">Sua Satisfação ou Seu Dinheiro de Volta</h3>
+                  <p className="text-lg text-gray-600 mt-2">
+                      Você tem <span className="font-bold">7 dias de garantia incondicional</span>. Se por qualquer motivo você não amar os jogos e achar que não valeu a pena, basta nos enviar um e-mail e nós devolveremos 100% do seu dinheiro. Sem perguntas, sem burocracia. O risco é todo nosso!
+                  </p>
+                </div>
              </div>
-             <p className="text-xl text-gray-700 font-semibold mb-4">
-                Garantia de 7 dias: Se você não amar o material, devolvemos 100% do valor.
-            </p>
-            <p className="text-gray-500 mb-8">
+             <p className="text-gray-500 my-8">
                 Acesso digital imediato. Pagamento único. Sem surpresas.
             </p>
             <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold text-2xl py-5 px-12 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 inline-block h-auto">
@@ -410,3 +443,4 @@ export default function Home() {
   );
 }
 
+    
