@@ -421,7 +421,7 @@ export default function Home() {
     <footer className="bg-white py-16 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6 text-center max-w-4xl">
              <div className="bg-gray-50 border-2 border-dashed border-gray-300 rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-center gap-8">
-                <Image src="https://agalves.com/jogos/garantia.png" alt="Selo de Garantia de 7 Dias" width={150} height={150} className="w-24 h-24 md:w-32 md:h-32"/>
+                <Image src="https://i.imgur.com/PmCidGm.png" alt="Selo de Garantia de 7 Dias" width={150} height={150} className="w-24 h-24 md:w-32 md:h-32"/>
                 <div className="text-center md:text-left">
                   <h3 className="text-2xl font-bold text-gray-800">Sua Satisfação ou Seu Dinheiro de Volta</h3>
                   <p className="text-lg text-gray-600 mt-2">
@@ -442,5 +442,7 @@ export default function Home() {
     </div>
   );
 }
+
+    
 
     
