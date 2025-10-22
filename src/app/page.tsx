@@ -138,30 +138,42 @@ export default function Home() {
 
     {/* SEÇÃO 3 – PARA QUEM É */}
     <section className="bg-light-blue py-16 sm:py-24">
-        <div className="container mx-auto px-4 sm:px-6">
-            <div className="max-w-3xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                    Este kit foi feito para você?
-                </h2>
-                <p className="text-lg text-gray-600 mb-12">
-                    Se você se identifica com algum destes pontos, a resposta é sim!
-                </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left">
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <p className="flex items-start"><CheckCircle2 className="w-6 h-6 mr-3 text-green-500 flex-shrink-0 mt-1" /> Para <span className='font-bold ml-1'>pais cristãos</span> que querem ensinar a Bíblia de um jeito divertido.</p>
-                    </div>
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <p className="flex items-start"><CheckCircle2 className="w-6 h-6 mr-3 text-green-500 flex-shrink-0 mt-1" /> Para quem <span className='font-bold ml-1'>não quer mais lutar</span> contra o tédio e a reclamação na hora do devocional.</p>
-                    </div>
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <p className="flex items-start"><CheckCircle2 className="w-6 h-6 mr-3 text-green-500 flex-shrink-0 mt-1" /> Para <span className='font-bold ml-1'>líderes de ministério infantil</span> e professores de escola dominical.</p>
-                    </div>
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <p className="flex items-start"><CheckCircle2 className="w-6 h-6 mr-3 text-green-500 flex-shrink-0 mt-1" /> Para quem busca criar <span className='font-bold ml-1'>memórias afetivas</span> e fortalecer os laços familiares na fé.</p>
-                    </div>
-                </div>
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Este kit foi feito para você?
+          </h2>
+          <p className="text-lg text-gray-600 mb-12">
+            Se você se identifica com algum destes pontos, a resposta é sim!
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left">
+            <div className="bg-white p-6 rounded-lg shadow">
+              <div className="flex items-start">
+                <CheckCircle2 className="w-6 h-6 mr-3 text-green-500 flex-shrink-0 mt-1" />
+                <p>Para pais cristãos que querem ensinar a Bíblia de um jeito divertido.</p>
+              </div>
             </div>
+            <div className="bg-white p-6 rounded-lg shadow">
+              <div className="flex items-start">
+                <CheckCircle2 className="w-6 h-6 mr-3 text-green-500 flex-shrink-0 mt-1" />
+                <p>Para quem não quer mais lutar contra o tédio e a reclamação na hora do devocional.</p>
+              </div>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow">
+              <div className="flex items-start">
+                <CheckCircle2 className="w-6 h-6 mr-3 text-green-500 flex-shrink-0 mt-1" />
+                <p>Para líderes de ministério infantil e professores de escola dominical.</p>
+              </div>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow">
+              <div className="flex items-start">
+                <CheckCircle2 className="w-6 h-6 mr-3 text-green-500 flex-shrink-0 mt-1" />
+                <p>Para quem busca criar memórias afetivas e fortalecer os laços familiares na fé.</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     {/* SEÇÃO 4 – BENEFÍCIOS */}
@@ -443,7 +455,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
-
-    
