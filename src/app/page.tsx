@@ -450,6 +450,10 @@ export default function Home() {
                     Quero Ensinar a Fé Brincando!
                 </a>
             </Button>
+            <div className="mt-12 text-center text-sm text-gray-500">
+              <p>Copyright © 2025</p>
+              <p>Todos os direitos reservados.</p>
+            </div>
         </div>
     </footer>
     </div>
